@@ -1,0 +1,66 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "abrir hope skill",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "olá",
+            "como vai você",
+            "diga oi mundo",
+            "diga oi",
+            "oi",
+            "diga olá mundo",
+            "diga olá"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "OqueFazerIntent",
+          "slots": [],
+          "samples": [
+            "o que fazer quando alguem desaparece",
+            "preciso de ajuda",
+            "me fale o passo a passo",
+            "me de dicas",
+            "o que faço",
+            "O que fazer"
+          ]
+        },
+        {
+          "name": "NumerosEmergenciaIntent",
+          "slots": [],
+          "samples": [
+            "me fale os numeros",
+            "quero os numeros de emergencia",
+            "quero o numeros",
+            "quero o numero da policia",
+            "numeros de emergencia",
+            "emergencia",
+            "numeros",
+            "me passa os numeros de emergencia"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "5"
+}

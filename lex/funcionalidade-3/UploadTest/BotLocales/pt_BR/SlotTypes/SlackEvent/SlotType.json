@@ -1,0 +1,1 @@
+{"name":"SlackEvent","identifier":"CWZXEERFDC","description":null,"slotTypeValues":[{"synonyms":null,"sampleValue":{"value":"{SlackEvent}"}}],"parentSlotTypeSignature":null,"valueSelectionSetting":{"regexFilter":null,"resolutionStrategy":"ORIGINAL_VALUE"}}

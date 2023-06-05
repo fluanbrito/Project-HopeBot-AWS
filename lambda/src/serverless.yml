@@ -1,0 +1,57 @@
+service: sprint-10
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.8
+  iamRoleStatements:
+      - Effect: Allow
+        Action: "*"
+        Resource: "*"
+      - Effect: Allow
+        Action:
+          - lambda:InvokeFunction
+        Resource: "*"
+      - Effect: Allow
+        Action:
+          - lambda:PublishLayerVersion
+        Resource: "*"
+      - Effect: Allow
+        Action:
+          - rekognition:CompareFaces
+        Resource: "*"
+      - Effect: Allow
+        Action:
+          - lex:RunBot
+        Resource:
+          - "*"
+      - Effect: Allow
+        Action:
+          - lex:PostText
+        Resource: 
+          - "*"
+      - Effect: Allow
+        Action:
+          - lex:PostText
+        Resource: 
+          - "*"
+      
+functions:
+  lambda_handler:
+    handler: handler.lambda_handler
+    events:
+      - httpApi:
+          path: /handler
+          method: POST
+  compare_faces:
+    handler: routes/compare_faces.compare_faces
+    events:
+      - httpApi:
+          path: /compareFaces
+          method: GET
+  transcribe:
+    handler: routes/transcribe.health
+    events:
+      - httpApi:
+          path: /transcribe
+          method: POST       
